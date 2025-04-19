@@ -1,26 +1,60 @@
 @import "tailwindcss";
-
+* {
+  font-family: "Heebo", sans-serif;
+}
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #ff6464;
+  --Secondry: #00a8cc;
+  --Dark: #21243d;
+  --Light: #8695a4;
+  --white: #ffffff;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.cont {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* adding heebo font */
+@font-face {
+  font-family: "Heebo";
+  src: url("../../public/assets/fonts/Heebo-Thin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "Heebo";
+  src: url("../../public/assets/fonts/Heebo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("../../public/assets/fonts/Heebo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("../../public/assets/fonts/Heebo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("../../public/assets/fonts/Heebo-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("../../public/assets/fonts/Heebo-ExtraBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("../../public/assets/fonts/Heebo-Black.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
 }
