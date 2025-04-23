@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import "./navbar.css";
+import PhoneNav from "./PhoneNav";
 
 function Navbar() {
   const [showNavlink, setShowNavlink] = useState(false);
@@ -12,15 +13,19 @@ function Navbar() {
           setShowNavlink(!showNavlink);
         }}
       >
-        <i className="fa-solid fa-bars brgr"></i>
+        {showNavlink ? (
+          <i className="fa-solid fa-xmark"></i>
+        ) : (
+          <i className="fa-solid fa-bars brgr"></i>
+        )}
       </div>
-      {showNavlink && (
-        <div className="nav-links">
-          <a>Works</a>
-          <a>Blog</a>
-          <a>Contact</a>
-        </div>
-      )}
+      {showNavlink && <PhoneNav />}
+
+      <div className="nav-links">
+        <a>Works</a>
+        <a>Blog</a>
+        <a>Contact</a>
+      </div>
     </div>
   );
 }
