@@ -23,9 +23,15 @@ const RecentPost = () => {
     },
   ];
   return (
-    <div className="mt-11 bg-[#EDF7FA] w-full flex justify-center pt-16 p-10 ">
+    <div className="mt-11 bg-[#EDF7FA] w-full  p-10 relative">
+      <div className="w-full mx-auto sm:w-[70%]  flex justify-center sm:justify-between mb-7">
+        <p className="text-[20px] cursor-pointer font-light">Recent posts</p>
+        <p className="text-[var(--Secondry)] absolute bottom-0 left-1/2 transform -translate-x-1/2 sm:static">
+          View all
+        </p>
+      </div>
       <div
-        className="container flex flex-col gap-10 justify-center items-center
+        className="container mx-auto flex flex-col gap-10 justify-center items-center
        md:flex-row"
       >
         {recentPosts.map((Element, index) => (
@@ -37,7 +43,7 @@ const RecentPost = () => {
             <div className="flex justify-around font-[Heebo] font-light text-[18px]  mb-3.5">
               <p>{Element.date}</p>|
               {Element.tags.map((elem, index) => (
-                <p className="text-left">{`${elem} , `}</p>
+                <p className="text-left" key={index}>{`${elem} , `}</p>
               ))}
             </div>
             <div className="pb-10 ">{Element.description}</div>
