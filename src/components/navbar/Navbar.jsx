@@ -22,9 +22,9 @@ function Navbar() {
       {showNavlink && <PhoneNav />}
 
       <div className="nav-links">
-        <a>Works</a>
-        <a>Blog</a>
-        <a>Contact</a>
+        <a href="/works">Works</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
       </div>
     </div>
   );

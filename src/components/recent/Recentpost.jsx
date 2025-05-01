@@ -26,7 +26,7 @@ const RecentPost = () => {
     <div className="mt-11 bg-[#EDF7FA] w-full  p-10 relative">
       <div className="w-full mx-auto sm:w-[70%]  flex justify-center sm:justify-between mb-7">
         <p className="text-[20px] cursor-pointer font-light">Recent posts</p>
-        <p className="text-[var(--Secondry)] absolute bottom-0 left-1/2 transform -translate-x-1/2 sm:static">
+        <p className="text-[var(--Secondry)] absolute bottom-0 left-1/2 transform -translate-x-1/2 p-1 sm:static">
           View all
         </p>
       </div>
