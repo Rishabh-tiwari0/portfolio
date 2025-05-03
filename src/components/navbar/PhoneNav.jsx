@@ -3,9 +3,9 @@ import React from "react";
 const PhoneNav = () => {
   return (
     <div className="phone-nav">
-      <a>Works</a>
-      <a>Blog</a>
-      <a>Contact</a>
+      <a href="/works">Works</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact</a>
     </div>
   );
 };
