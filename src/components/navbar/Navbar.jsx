@@ -6,7 +6,7 @@ import PhoneNav from "./PhoneNav";
 function Navbar() {
   const [showNavlink, setShowNavlink] = useState(false);
   return (
-    <div className="nav-cont">
+    <div className="nav-cont ">
       <div
         className="brgr"
         onClick={() => {
