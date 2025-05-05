@@ -9,7 +9,7 @@ const FeaturedWorks = () => {
 
       <div className="w-[90%] mx-auto mt-5 border-b-[1.5px] pb-7 border-gray-300 sm:flex sm:gap-10 sm:w-[70%]">
         {/* img container */}
-        <div className="sm:max-w-[300px] rounded-sm overflow-hidden">
+        <div className="sm:max-w-[300px]  rounded-sm overflow-hidden">
           <img src={featuredWorks[0].image} alt="dashboard img" />
         </div>
         {/* text container */}
