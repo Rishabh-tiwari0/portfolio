@@ -1,13 +1,12 @@
 import posts from "../../../public/data/BlogPosts.json";
 const page = () => {
-  console.log(posts);
   return (
-    <div className="sm:w-[80%] w-[90%] mx-auto my-4 ">
+    <div className="sm:w-[80%] w-[90%] mx-auto my-4">
       <h1 className="sm:text-4xl text-3xl font-semibold">Blog</h1>
       <div className="flex flex-col gap-4 mt-4">
         {posts.map((post, index) => (
           <div
-            className="border-b-[1.5px] border-b-gray-300 pb-[10px] mb-1"
+            className="border-b-[1.5px] border-b-gray-300 pb-[10px] mb-1 cursor-pointer transform hover:scale-101 transition-all duration-300"
             key={index}
           >
             <div className="text-2xl">{post.title}</div>

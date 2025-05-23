@@ -22,6 +22,7 @@ function Navbar() {
       {showNavlink && <PhoneNav />}
 
       <div className="nav-links">
+        <a href="/">Home</a>
         <a href="/works">Works</a>
         <a href="/blog">Blog</a>
         <a href="/contact">Contact</a>
