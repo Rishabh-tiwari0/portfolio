@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="w-full flex flex-col items-center justify-center md:items-start md:w-1/2 ">
         <div className="text-center text-[25px] font-bold mt-7 w-3/4 text-[var(--Dark)] md:text-left md:text-[35px]">
           <p>
-            {"Hi, I am Rishabh Tiwari, Full Stack Developer and IT Consultant."}
+            {"Hi, I am Shresth Jaiswal, Full Stack Developer and IT Consultant."}
           </p>
         </div>
         <div className="w-[90%] text-center">
